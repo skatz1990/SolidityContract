@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/skatz1990/SolidityContract#readme",
   "dependencies": {
+    "@truffle/hdwallet-provider": "^1.2.6",
     "ganache-cli": "^6.12.2",
     "mocha": "^8.3.2",
     "solc": "^0.8.3",

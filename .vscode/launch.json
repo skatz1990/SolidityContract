@@ -11,8 +11,8 @@
             "type": "node-terminal"
         },
         {
-            "command": "node compile.js",
-            "name": "node compile.js",
+            "command": "node ${file}",
+            "name": "node",
             "request": "launch",
             "type": "node-terminal"
         }
