@@ -8,19 +8,19 @@ const source = fs.readFileSync(inboxPath, 'utf8');
 var input = {
     language: 'Solidity',
     sources: {
-        'Inbox.sol' :{
+        'Inbox.sol': {
             content: source
         }
     },
     settings: {
         outputSelection: {
             '*': {
-                '*': [ '*']
+                '*': ['*']
             }
         }
     }
 };
 
-var compiled = solc.compile(JSON.stringify(input));
-module.exports = compiled.contracts;
-console.log(JSON.parse(compiled))
+var compiled = JSON.parse(solc.compile(JSON.stringify(input)));
+module.exports = compiled.contracts["Inbox.sol"].Inbox;
+console.log(compiled);
