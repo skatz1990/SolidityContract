@@ -4,8 +4,23 @@
   "description": "<img src=\"/lottery/resources/image002.png\" width=50%>\r <img src=\"/lottery/resources/image001.png\" width=50%>",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --timeout 10000"
   },
-  "author": "",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skatz1990/SolidityContract.git"
+  },
+  "author": "skatz1990",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/skatz1990/SolidityContract/issues"
+  },
+  "homepage": "https://github.com/skatz1990/SolidityContract#readme",
+  "dependencies": {
+    "@truffle/hdwallet-provider": "^1.2.6",
+    "ganache-cli": "^6.12.2",
+    "mocha": "^8.3.2",
+    "solc": "^0.8.3",
+    "web3": "^1.3.5"
+  }
 }

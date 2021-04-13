@@ -22,5 +22,5 @@ var input = {
 };
 
 var compiled = JSON.parse(solc.compile(JSON.stringify(input)));
-module.exports = compiled.contracts["lottery.sol"].lottery;
+module.exports = compiled.contracts["Lottery.sol"].Lottery;
 console.log(compiled);
