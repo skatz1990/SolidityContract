@@ -1,0 +1,11 @@
+{
+  "name": "lottery",
+  "version": "1.0.0",
+  "description": "<img src=\"/lottery/resources/image002.png\" width=50%>\r <img src=\"/lottery/resources/image001.png\" width=50%>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
