@@ -9,9 +9,9 @@ let lottery;
 let accounts;
 
 beforeEach(async () => {
-    lottery = await web3.eth.getAccounts();
+    accounts = await web3.eth.getAccounts();
 
-    inbox = await new web3.eth.Contract(abi)
+    lottery = await new web3.eth.Contract(abi)
         .deploy({
             data: "0x" + evm.bytecode.object
         })
@@ -21,19 +21,19 @@ beforeEach(async () => {
         });
 });
 
-describe('Inbox', () => {
+describe('Lottery', () => {
     it('Deploys a contract', () => {
         assert.ok(lottery.options.address);
     });
 
-//     it('Has a default message', async () => {
-//         const message = await inbox.methods.message().call();
-//         assert.strictEqual(message, "My message");
-//     })
+    //     it('Has a default message', async () => {
+    //         const message = await inbox.methods.message().call();
+    //         assert.strictEqual(message, "My message");
+    //     })
 
-//     it('Can change the message', async () => {
-//         await inbox.methods.setMessage('bye').send({ from: accounts[0] });
-//         const message = await inbox.methods.message().call();
-//         assert.strictEqual(message, 'bye');
-//     })
-// });
+    //     it('Can change the message', async () => {
+    //         await inbox.methods.setMessage('bye').send({ from: accounts[0] });
+    //         const message = await inbox.methods.message().call();
+    //         assert.strictEqual(message, 'bye');
+    //     })
+});
